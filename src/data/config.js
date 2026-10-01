@@ -17,18 +17,18 @@ export const shop = {
   contactDescription:
     "Message Home & Style Imports on WhatsApp, call the shop, or visit during opening hours. The site does not take payments.",
   siteUrl: (envUrl || "https://homeandstyleimports.com").replace(/\/$/, ""),
-  whatsappNumber: "233200000000",
-  phoneNumbers: ["233200000000"],
+  whatsappNumber: "233276237655",
+  phoneNumbers: ["233599779733", "233557270167", "233540423359"],
   currency: "GHS",
   currencyLabel: "GH₵",
   address: {
-    line1: "Osu",
+    line1: "Mc-Carthy Hill",
     line2: "Accra",
     region: "Greater Accra",
     country: "Ghana",
     note: "Street address is shared when you enquire.",
   },
-  mapsQuery: "Osu, Accra, Ghana",
+  mapsQuery: "Mc-Carthy Hill, Accra, Ghana",
   openingHours: [
     { label: "Monday – Saturday", value: "8:30am – 7:00pm" },
     { label: "Sunday", value: "Closed" },
