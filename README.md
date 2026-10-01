@@ -41,7 +41,7 @@ Every product can open WhatsApp with a pre-filled message:
 
 The heart saves pieces on this phone only (no account, no server). “Send on WhatsApp” turns that list into one message. Nothing is reserved until the shop replies.
 
-Clothing, bags, jewellery and gifts are in the category list because the plan includes them, but they have no sample photos yet. Those pages ask the customer to enquire rather than showing an empty grid. Add products in those categories and they appear automatically.
+Shoes, ladies' bags, phone accessories and small gadgets are in the catalogue as sample pieces. Clothing, totes, jewellery and gifts are listed too, but they have no photos yet. Those pages ask the customer to enquire rather than showing an empty grid. Add products in those categories and they appear automatically.
 
 ## Decisions that differ from a literal reading of the plan
 
