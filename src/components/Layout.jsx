@@ -33,7 +33,7 @@ export default function Layout() {
         Skip to content
       </a>
       <p className="bg-soft px-4 py-2 text-center text-xs leading-relaxed text-ink sm:text-sm">
-        Sample preview. Products, prices and the WhatsApp number are placeholders until the shop confirms them.
+        Sample products and prices. Message the shop to confirm what is actually in stock.
       </p>
       <Header />
       <main

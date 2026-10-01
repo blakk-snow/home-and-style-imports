@@ -195,11 +195,23 @@ export default function Home() {
           <span className="mt-4 block font-serif text-2xl">WhatsApp</span>
           <span className="mt-1 block text-sm text-[#e6d9cc]">{formatPhone(shop.whatsappNumber)}</span>
         </a>
-        <a href={telLink()} className="rounded-2xl bg-paper p-5 ring-1 ring-line">
+
+
+        <div className="rounded-2xl bg-paper p-5 ring-1 ring-line">
           <Phone className="size-5 text-clay" aria-hidden="true" />
           <span className="mt-4 block font-serif text-2xl">Call</span>
-          <span className="mt-1 block text-sm text-muted">{formatPhone(shop.phoneNumbers[0])}</span>
-        </a>
+          <ul className="mt-2 space-y-1 text-sm">
+            {shop.phoneNumbers.map((number) => (
+              <li key={number}>
+                <a className="text-muted hover:text-clay" href={telLink(number)}>
+                  {formatPhone(number)}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+
         <Link to="/contact#visit" className="rounded-2xl bg-paper p-5 ring-1 ring-line">
           <MapPin className="size-5 text-clay" aria-hidden="true" />
           <span className="mt-4 block font-serif text-2xl">Visit</span>

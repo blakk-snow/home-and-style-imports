@@ -27,7 +27,7 @@ export default function Contact() {
           </span>
           <div className="min-w-0 flex-1">
             <p className="flex items-center gap-2 font-semibold">
-              WhatsApp <SampleTag />
+              WhatsApp
             </p>
             <p className="text-sm text-muted">{formatPhone(shop.whatsappNumber)}</p>
           </div>
@@ -36,19 +36,23 @@ export default function Contact() {
           </a>
         </div>
 
-        <div className="flex items-center gap-4 rounded-2xl bg-paper p-4 ring-1 ring-line">
-          <span className="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-soft text-clay">
-            <Phone className="size-5" aria-hidden="true" />
-          </span>
-          <div className="min-w-0 flex-1">
-            <p className="flex items-center gap-2 font-semibold">
-              Call the shop <SampleTag />
-            </p>
-            <p className="text-sm text-muted">{formatPhone(shop.phoneNumbers[0])}</p>
+      <div className="rounded-2xl bg-paper p-4 ring-1 ring-line">
+          <div className="flex items-center gap-4">
+            <span className="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-soft text-clay">
+              <Phone className="size-5" aria-hidden="true" />
+            </span>
+            <p className="font-semibold">Call the shop</p>
           </div>
-          <a className="btn btn-line shrink-0 px-4 py-2.5" href={telLink()}>
-            Call
-          </a>
+          <ul className="mt-3 space-y-2">
+            {shop.phoneNumbers.map((number) => (
+              <li key={number} className="flex items-center justify-between gap-3">
+                <span className="text-sm text-muted">{formatPhone(number)}</span>
+                <a className="btn btn-line shrink-0 px-4 py-2.5" href={telLink(number)}>
+                  Call
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
 
         <div className="flex items-start gap-4 rounded-2xl bg-paper p-4 ring-1 ring-line">
@@ -72,7 +76,6 @@ export default function Contact() {
         <h2 className="text-3xl">Visit</h2>
         <p className="mt-2 flex items-center gap-2 text-muted">
           {shop.address.line1}, {shop.address.line2}, {shop.address.region}
-          <SampleTag />
         </p>
         <p className="mt-1 text-sm text-muted">{shop.address.note}</p>
         <a

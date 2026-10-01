@@ -52,7 +52,7 @@ export default function Footer() {
       </div>
       <div className="border-t border-white/10">
         <p className="mx-auto max-w-6xl px-4 py-4 text-xs text-[#d9c7ba] sm:px-6">
-          © {new Date().getFullYear()} {shop.name}. Sample catalogue for review.
+          © {new Date().getFullYear()} {shop.name}. 
         </p>
       </div>
     </footer>
