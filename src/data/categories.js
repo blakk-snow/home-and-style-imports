@@ -1,0 +1,51 @@
+export const categories = [
+  {
+    slug: "home-decor",
+    name: "Home Décor",
+    short: "Décor",
+    image: "/images/products/ceramic-table-vase.jpg",
+    blurb: "Vases, hangings and small pieces for a quiet room.",
+  },
+  {
+    slug: "kitchen-dining",
+    name: "Kitchen & Dining",
+    short: "Kitchen",
+    image: "/images/products/olive-wood-serving-board.jpg",
+    blurb: "Boards, linen and stoneware for the table.",
+  },
+  {
+    slug: "bedding-textiles",
+    name: "Bedding & Textiles",
+    short: "Textiles",
+    image: "/images/products/wool-throw-blanket.jpg",
+    blurb: "Throws and covers, brought in in small numbers.",
+  },
+  {
+    slug: "clothing",
+    name: "Clothing",
+    short: "Clothing",
+    image: "",
+    blurb: "Shirts, dresses and knits. Ask what is on the rail this week.",
+  },
+  {
+    slug: "bags-accessories",
+    name: "Bags & Accessories",
+    short: "Bags",
+    image: "",
+    blurb: "Totes and small leather goods. Ask what came in.",
+  },
+  {
+    slug: "jewellery",
+    name: "Jewellery",
+    short: "Jewellery",
+    image: "",
+    blurb: "Hoops, beads and cuffs. Ask what is in the case.",
+  },
+  {
+    slug: "gifts-novelties",
+    name: "Gifts & Novelties",
+    short: "Gifts",
+    image: "",
+    blurb: "Small gifts. Ask what we can put together this week.",
+  },
+];
