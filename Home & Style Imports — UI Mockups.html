@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Home & Style Imports — UI Mockups</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=DM+Sans:wght@400;500;700&display=swap">
+<style>
+:root{--bg:#f3ece2;--ink:#2b211c;--mut:#6f625a;--card:#fff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1d1714;--ink:#f3ece2;--mut:#b5a89e;--card:#2a211d}}
+:root[data-theme="dark"]{--bg:#1d1714;--ink:#f3ece2;--mut:#b5a89e;--card:#2a211d}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'DM Sans',system-ui,sans-serif;line-height:1.5}
+.wrap{max-width:1280px;margin:0 auto;padding:28px 18px 48px}
+h1{font-family:Fraunces,Georgia,serif;font-size:clamp(26px,5vw,38px);margin:0 0 6px}
+.sub{color:var(--mut);margin:0 0 28px;max-width:640px}
+.stage{display:flex;flex-wrap:wrap;gap:34px 28px;justify-content:center}
+.slot{width:300px;max-width:100%}
+.cap{font-weight:700;font-size:14px;margin:0 0 2px}
+.note{font-size:12.5px;color:var(--mut);margin:0 0 10px;min-height:36px}
+.phone{width:300px;max-width:100%;height:600px;background:#faf5ee;color:#2b211c;border-radius:30px;border:7px solid #2b211c;overflow:hidden;position:relative;display:flex;flex-direction:column;box-shadow:0 14px 30px rgba(0,0,0,.18);font-size:12.5px}
+:root{--t:#b5573a;--t2:#8f3f27;--g:#1fa855;--line:#eadfd2;--soft:#f1e6d8}
+.ico{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.sm{width:14px;height:14px}
+.top{display:flex;align-items:center;justify-content:space-between;padding:12px 14px;background:#faf5ee;border-bottom:1px solid var(--line)}
+.logo{font-family:Fraunces,Georgia,serif;font-weight:700;font-size:15px;color:var(--t2);line-height:1.1}
+.logo small{display:block;font-family:'DM Sans',sans-serif;font-size:9px;letter-spacing:.14em;color:#8a7a6f;font-weight:500}
+.body{flex:1;overflow:hidden;position:relative}
+.hero{margin:12px;border-radius:18px;padding:18px 16px;background:linear-gradient(135deg,#b5573a,#d98a5f);color:#fff;position:relative;overflow:hidden}
+.hero h2{font-family:Fraunces,Georgia,serif;font-size:21px;margin:0 0 6px;line-height:1.15}
+.hero p{margin:0 0 12px;opacity:.92;font-size:12px}
+.hero:after{content:"";position:absolute;right:-30px;bottom:-40px;width:130px;height:130px;border-radius:50%;background:rgba(255,255,255,.14)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;border:0;border-radius:999px;padding:9px 15px;font:700 12px 'DM Sans',sans-serif;background:#fff;color:var(--t2)}
+.btn.g{background:var(--g);color:#fff}
+.btn.o{background:transparent;border:1.5px solid var(--t);color:var(--t2)}
+.btn.w{width:100%;padding:12px;font-size:13px}
+.sec{display:flex;justify-content:space-between;align-items:baseline;padding:6px 14px 6px}
+.sec b{font-family:Fraunces,Georgia,serif;font-size:15px}
+.sec span{color:var(--t);font-size:11px;font-weight:700}
+.cats{display:flex;gap:10px;padding:0 14px 8px;overflow:hidden}
+.cat{flex:none;width:58px;text-align:center;font-size:10px;font-weight:500}
+.cat i{display:grid;place-items:center;width:52px;height:52px;border-radius:50%;margin:0 auto 4px;background:var(--soft);color:var(--t2)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:0 14px}
+.card{background:#fff;border-radius:14px;overflow:hidden;border:1px solid var(--line)}
+.img{height:92px;display:grid;place-items:center;color:rgba(255,255,255,.9);position:relative}
+.img .ico{width:34px;height:34px;stroke-width:1.5}
+.tag{position:absolute;top:6px;left:6px;background:#fff;color:var(--t2);font-size:9px;font-weight:700;padding:2px 7px;border-radius:999px}
+.tag.out{background:#2b211c;color:#fff}
+.info{padding:8px 9px 9px}
+.info b{display:block;font-size:11.5px;line-height:1.25}
+.info em{font-style:normal;color:var(--t2);font-weight:700;font-size:12px}
+.row{display:flex;justify-content:space-between;align-items:center;margin-top:5px}
+.wa{width:24px;height:24px;border-radius:50%;background:var(--g);color:#fff;display:grid;place-items:center}
+.fab{position:absolute;right:12px;bottom:12px;width:44px;height:44px;border-radius:50%;background:var(--g);color:#fff;display:grid;place-items:center;box-shadow:0 6px 14px rgba(31,168,85,.4)}
+.fab .ico{width:22px;height:22px}
+.search{display:flex;gap:8px;align-items:center;margin:10px 14px;padding:9px 12px;background:#fff;border:1px solid var(--line);border-radius:999px;color:#8a7a6f}
+.chips{display:flex;gap:6px;padding:0 14px 10px;overflow:hidden}
+.chip{flex:none;padding:5px 11px;border-radius:999px;background:#fff;border:1px solid var(--line);font-weight:500;font-size:11px}
+.chip.on{background:var(--t);border-color:var(--t);color:#fff}
+.tabbar{display:flex;justify-content:space-around;padding:8px 6px 10px;border-top:1px solid var(--line);background:#faf5ee;font-size:9.5px;color:#8a7a6f}
+.tabbar div{display:flex;flex-direction:column;align-items:center;gap:2px}
+.tabbar .on{color:var(--t2);font-weight:700}
+.gal{height:210px;margin:0;display:grid;place-items:center;color:rgba(255,255,255,.92);background:linear-gradient(135deg,#7d8f6b,#b9c4a0);position:relative}
+.gal .ico{width:76px;height:76px;stroke-width:1.2}
+.dots{position:absolute;bottom:10px;display:flex;gap:5px}
+.dots i{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.55)}.dots i:first-child{background:#fff;width:16px;border-radius:4px}
+.circ{position:absolute;top:10px;width:30px;height:30px;border-radius:50%;background:#fff;color:#2b211c;display:grid;place-items:center}
+.pd{padding:14px}
+.pd h3{font-family:Fraunces,Georgia,serif;font-size:19px;margin:0 0 3px;line-height:1.2}
+.price{font-size:18px;font-weight:700;color:var(--t2)}
+.ok{display:inline-flex;gap:5px;align-items:center;color:#1b7a3f;background:#e3f4e8;border-radius:999px;padding:2px 9px;font-size:10.5px;font-weight:700;margin-left:6px}
+.pd p{color:#5d5048;margin:8px 0}
+.sw{display:flex;gap:7px;margin:6px 0 12px;align-items:center}
+.sw i{width:20px;height:20px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1px var(--line)}
+.sticky{position:absolute;left:0;right:0;bottom:0;padding:10px 14px 14px;background:#faf5ee;border-top:1px solid var(--line);display:flex;gap:8px}
+.cl{margin:10px 14px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px;display:flex;gap:11px;align-items:center}
+.cl .ci{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--soft);color:var(--t2);flex:none}
+.cl b{display:block;font-size:12.5px}.cl span{color:#7b6d64;font-size:11px}
+.map{margin:10px 14px;height:96px;border-radius:14px;background:repeating-linear-gradient(45deg,#e7dccd,#e7dccd 10px,#efe6d8 10px,#efe6d8 20px);display:grid;place-items:center;color:var(--t2)}
+.adm{padding:12px 14px;display:flex;gap:8px;overflow:hidden}
+.stat{flex:1;background:#fff;border:1px solid var(--line);border-radius:12px;padding:9px}
+.stat b{font-family:Fraunces,Georgia,serif;font-size:19px;display:block}.stat span{font-size:10px;color:#7b6d64}
+.li{display:flex;gap:10px;align-items:center;margin:0 14px 8px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:8px}
+.li .th{width:42px;height:42px;border-radius:9px;display:grid;place-items:center;color:#fff;flex:none}
+.li .th .ico{width:20px;height:20px}
+.li div.t{flex:1;min-width:0}.li b{display:block;font-size:12px}.li span{font-size:10.5px;color:#7b6d64}
+.sw2{width:30px;height:17px;border-radius:99px;background:var(--g);position:relative;flex:none}.sw2:after{content:"";position:absolute;right:2px;top:2px;width:13px;height:13px;border-radius:50%;background:#fff}.sw2.off{background:#cfc4b8}.sw2.off:after{right:auto;left:2px}
+.foot{margin-top:30px;color:var(--mut);font-size:13px;text-align:center}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<symbol id="wa" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></symbol>
+<symbol id="ph" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+<symbol id="pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+<symbol id="se" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol>
+<symbol id="mn" viewBox="0 0 24 24"><path d="M4 12h16M4 6h16M4 18h16"/></symbol>
+<symbol id="ck" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+<symbol id="ht" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></symbol>
+<symbol id="bk" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+<symbol id="pl" viewBox="0 0 24 24"><path d="M5 12h14M12 5v14"/></symbol>
+<symbol id="pe" viewBox="0 0 24 24"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></symbol>
+<symbol id="hm" viewBox="0 0 24 24"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></symbol>
+<symbol id="sh" viewBox="0 0 24 24"><path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/></symbol>
+<symbol id="bg" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></symbol>
+<symbol id="gm" viewBox="0 0 24 24"><path d="M6 3h12l4 6-10 13L2 9Z"/><path d="M2 9h20"/></symbol>
+<symbol id="gf" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13"/><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/></symbol>
+</defs>
+</svg>
+
+<div class="wrap">
+<h1>Home &amp; Style Imports — UI Mockups</h1>
+<p class="sub">Mobile-first concept screens for the catalogue app. Colours, photos and wording are placeholders: warm terracotta brand, WhatsApp-green action buttons, and lucide-style icons.</p>
+
+<div class="stage">
+
+<!-- 1 HOME -->
+<div class="slot"><p class="cap">1 · Home</p><p class="note">Hero, categories, new arrivals, floating WhatsApp button.</p>
+<div class="phone">
+<div class="top"><div class="logo">Home &amp; Style<small>IMPORTS</small></div><svg class="ico"><use href="#se"/></svg><svg class="ico"><use href="#mn"/></svg></div>
+<div class="body">
+<div class="hero"><h2>Beautiful finds for your home &amp; wardrobe</h2><p>Imported décor, clothing and accessories.</p><span class="btn">Browse the shop</span></div>
+<div class="cats">
+<div class="cat"><i><svg class="ico"><use href="#hm"/></svg></i>Décor</div>
+<div class="cat"><i><svg class="ico"><use href="#sh"/></svg></i>Clothing</div>
+<div class="cat"><i><svg class="ico"><use href="#bg"/></svg></i>Bags</div>
+<div class="cat"><i><svg class="ico"><use href="#gm"/></svg></i>Jewellery</div>
+<div class="cat"><i><svg class="ico"><use href="#gf"/></svg></i>Gifts</div>
+</div>
+<div class="sec"><b>New arrivals</b><span>See all</span></div>
+<div class="grid">
+<div class="card"><div class="img" style="background:linear-gradient(135deg,#7d8f6b,#b9c4a0)"><span class="tag">New</span><svg class="ico"><use href="#hm"/></svg></div><div class="info"><b>Ceramic Table Vase</b><div class="row"><em>GH₵ 180</em><span class="wa"><svg class="ico sm"><use href="#wa"/></svg></span></div></div></div>
+<div class="card"><div class="img" style="background:linear-gradient(135deg,#c98a6b,#e3b79b)"><span class="tag">New</span><svg class="ico"><use href="#sh"/></svg></div><div class="info"><b>Linen Summer Shirt</b><div class="row"><em>GH₵ 220</em><span class="wa"><svg class="ico sm"><use href="#wa"/></svg></span></div></div></div>
+</div>
+<div class="fab"><svg class="ico"><use href="#wa"/></svg></div>
+</div>
+<div class="tabbar"><div class="on"><svg class="ico"><use href="#hm"/></svg>Home</div><div><svg class="ico"><use href="#bg"/></svg>Shop</div><div><svg class="ico"><use href="#pin"/></svg>Visit</div><div><svg class="ico"><use href="#ph"/></svg>Contact</div></div>
+</div></div>
+
+<!-- 2 SHOP -->
+<div class="slot"><p class="cap">2 · Shop / Category</p><p class="note">Search, category chips, stock tags, quick WhatsApp icon.</p>
+<div class="phone">
+<div class="top"><svg class="ico"><use href="#bk"/></svg><div class="logo">All Products</div><svg class="ico"><use href="#ht"/></svg></div>
+<div class="body">
+<div class="search"><svg class="ico sm"><use href="#se"/></svg>Search products…</div>
+<div class="chips"><span class="chip on">All</span><span class="chip">Décor</span><span class="chip">Clothing</span><span class="chip">Bags</span><span class="chip">Gifts</span></div>
+<div class="grid">
+<div class="card"><div class="img" style="background:linear-gradient(135deg,#8c6e9a,#b9a0c6)"><svg class="ico"><use href="#gm"/></svg></div><div class="info"><b>Gold Hoop Earrings</b><div class="row"><em>GH₵ 95</em><span class="wa"><svg class="ico sm"><use href="#wa"/></svg></span></div></div></div>
+<div class="card"><div class="img" style="background:linear-gradient(135deg,#4f7a86,#8fb4bd)"><svg class="ico"><use href="#bg"/></svg></div><div class="info"><b>Canvas Tote Bag</b><div class="row"><em>GH₵ 150</em><span class="wa"><svg class="ico sm"><use href="#wa"/></svg></span></div></div></div>
+<div class="card"><div class="img" style="background:linear-gradient(135deg,#7d8f6b,#b9c4a0)"><svg class="ico"><use href="#hm"/></svg></div><div class="info"><b>Ceramic Table Vase</b><div class="row"><em>GH₵ 180</em><span class="wa"><svg class="ico sm"><use href="#wa"/></svg></span></div></div></div>
+<div class="card"><div class="img" style="background:linear-gradient(135deg,#9a8a7d,#c4b8ad)"><span class="tag out">Out of stock</span><svg class="ico"><use href="#sh"/></svg></div><div class="info"><b>Wool Throw Blanket</b><div class="row"><em>GH₵ 260</em><span class="wa" style="background:#cfc4b8"><svg class="ico sm"><use href="#wa"/></svg></span></div></div></div>
+</div>
+<div class="fab"><svg class="ico"><use href="#wa"/></svg></div>
+</div>
+<div class="tabbar"><div><svg class="ico"><use href="#hm"/></svg>Home</div><div class="on"><svg class="ico"><use href="#bg"/></svg>Shop</div><div><svg class="ico"><use href="#pin"/></svg>Visit</div><div><svg class="ico"><use href="#ph"/></svg>Contact</div></div>
+</div></div>
+
+<!-- 3 PRODUCT -->
+<div class="slot"><p class="cap">3 · Product Detail</p><p class="note">Gallery, price, stock status, sticky WhatsApp and Call buttons.</p>
+<div class="phone">
+<div class="body">
+<div class="gal"><span class="circ" style="left:10px"><svg class="ico"><use href="#bk"/></svg></span><span class="circ" style="right:10px"><svg class="ico"><use href="#ht"/></svg></span><svg class="ico"><use href="#hm"/></svg><div class="dots"><i></i><i></i><i></i></div></div>
+<div class="pd">
+<h3>Ceramic Table Vase</h3>
+<div><span class="price">GH₵ 180</span><span class="ok"><svg class="ico sm"><use href="#ck"/></svg>In stock</span></div>
+<p>Hand-glazed imported ceramic vase. 28 cm tall. Adds a calm, modern touch to a table or shelf.</p>
+<b style="font-size:11px">Colours</b>
+<div class="sw"><i style="background:#9fb08a"></i><i style="background:#e8dccb"></i><i style="background:#2b211c"></i></div>
+<span class="chip" style="display:inline-block">Décor</span> <span class="chip" style="display:inline-block">Ref #HS-0142</span>
+</div>
+</div>
+<div class="sticky"><span class="btn g" style="flex:1.6"><svg class="ico sm"><use href="#wa"/></svg>Enquire on WhatsApp</span><span class="btn o" style="flex:1"><svg class="ico sm"><use href="#ph"/></svg>Call</span></div>
+</div></div>
+
+<!-- 4 CONTACT -->
+<div class="slot"><p class="cap">4 · Contact &amp; Visit</p><p class="note">All ways to reach the owner. No payment screens anywhere.</p>
+<div class="phone">
+<div class="top"><svg class="ico"><use href="#bk"/></svg><div class="logo">Contact Us</div><svg class="ico" style="opacity:0"><use href="#ht"/></svg></div>
+<div class="body">
+<div style="padding:14px 14px 0"><div style="font-family:Fraunces,Georgia,serif;font-size:19px;line-height:1.2">We'd love to help you find the perfect piece.</div></div>
+<div class="cl"><div class="ci" style="background:#dff3e6;color:#1b7a3f"><svg class="ico"><use href="#wa"/></svg></div><div style="flex:1"><b>WhatsApp</b><span>+233 XX XXX XXXX</span></div><span class="btn g" style="padding:7px 11px">Chat</span></div>
+<div class="cl"><div class="ci"><svg class="ico"><use href="#ph"/></svg></div><div style="flex:1"><b>Call the shop</b><span>+233 XX XXX XXXX</span></div><span class="btn o" style="padding:6px 11px">Call</span></div>
+<div class="cl"><div class="ci"><svg class="ico"><use href="#ck"/></svg></div><div><b>Opening hours</b><span>Mon–Sat 8:30am – 7pm · Sun closed</span></div></div>
+<div class="map"><svg class="ico" style="width:34px;height:34px"><use href="#pin"/></svg></div>
+<div style="padding:0 14px;color:#7b6d64;font-size:11.5px">Shop address line, Town, Region. <b style="color:#8f3f27">Open in Maps</b></div>
+</div>
+<div class="tabbar"><div><svg class="ico"><use href="#hm"/></svg>Home</div><div><svg class="ico"><use href="#bg"/></svg>Shop</div><div><svg class="ico"><use href="#pin"/></svg>Visit</div><div class="on"><svg class="ico"><use href="#ph"/></svg>Contact</div></div>
+</div></div>
+
+<!-- 5 ADMIN -->
+<div class="slot"><p class="cap">5 · Owner Admin (Phase 2)</p><p class="note">Login-protected. Add products, toggle stock, edit details.</p>
+<div class="phone">
+<div class="top"><div class="logo">Admin<small>PRODUCTS</small></div><span class="btn" style="background:var(--t);color:#fff;padding:7px 12px"><svg class="ico sm"><use href="#pl"/></svg>Add</span></div>
+<div class="body">
+<div class="adm"><div class="stat"><b>48</b><span>Products</span></div><div class="stat"><b>41</b><span>In stock</span></div><div class="stat"><b>7</b><span>Out</span></div></div>
+<div class="search" style="margin-top:0"><svg class="ico sm"><use href="#se"/></svg>Search your products…</div>
+<div class="li"><div class="th" style="background:#7d8f6b"><svg class="ico"><use href="#hm"/></svg></div><div class="t"><b>Ceramic Table Vase</b><span>Décor · GH₵ 180</span></div><svg class="ico sm"><use href="#pe"/></svg><span class="sw2"></span></div>
+<div class="li"><div class="th" style="background:#c98a6b"><svg class="ico"><use href="#sh"/></svg></div><div class="t"><b>Linen Summer Shirt</b><span>Clothing · GH₵ 220</span></div><svg class="ico sm"><use href="#pe"/></svg><span class="sw2"></span></div>
+<div class="li"><div class="th" style="background:#4f7a86"><svg class="ico"><use href="#bg"/></svg></div><div class="t"><b>Canvas Tote Bag</b><span>Bags · GH₵ 150</span></div><svg class="ico sm"><use href="#pe"/></svg><span class="sw2"></span></div>
+<div class="li"><div class="th" style="background:#9a8a7d"><svg class="ico"><use href="#sh"/></svg></div><div class="t"><b>Wool Throw Blanket</b><span>Décor · GH₵ 260</span></div><svg class="ico sm"><use href="#pe"/></svg><span class="sw2 off"></span></div>
+</div>
+<div class="tabbar"><div class="on"><svg class="ico"><use href="#bg"/></svg>Products</div><div><svg class="ico"><use href="#gf"/></svg>Categories</div><div><svg class="ico"><use href="#ph"/></svg>Shop info</div></div>
+</div></div>
+
+</div>
+<p class="foot">Concept visuals only. Final photos, logo, prices and contact details come from the shop owner.</p>
+</div>
+</body>
+</html>
